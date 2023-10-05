@@ -1,17 +1,29 @@
+* {
+    margin: 10px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
-.footerstyle {
-    color: black;
-    font-size: 1.5rem;
-}
 
 nav {
     width: 50%;
     font-size: 2rem;
+}
+
+a {
+    color: #6C5939;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -19,13 +31,98 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+/*PAGINA DE GALERIA*/
+
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "area1 area1 area2 area3"
+        "area1 area1 area4 area5"
+        "area6 area7 area8 area8";
+
+}
+
+.gridarea1 {
+    grid-area: area1;
+}
+
+.gridarea2 {
+    grid-area: area2;
+}
+
+.gridarea3 {
+    grid-area: area3;
+}
+
+
+.gridarea4 {
+    grid-area: area4;
+}
+
+
+.gridarea5 {
+    grid-area: area5;
+}
+
+.gridarea6 {
+    grid-area: area6;
+}
+
+
+.gridarea7 {
+    grid-area: area7;
+}
+
+.gridarea8 {
+    grid-area: area8;
+}
+
+
+
+/*PAGINA UBICACION*/
+
+.flexubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*PAGINA CONTACTO*/
+
+
+
+
+.mainimg {
+    width: 60%;
+    align: center;
+}
+
+
+.card-img-top {
+    height: 15rem;
+    width: 16rem;
+}
+
+
+article {
+    border: solid black 2px;
+}
+
+
+
+
+
 
 h1,
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(36, 121, 36);
+    color: #6c5939;
 }
 
 h1 {
@@ -36,21 +133,9 @@ h2 {
     font-size: 3rem;
 }
 
-html {
-    font-size: 62.5%;
-}
+
 
 p {
-    font-size: 1.5rem;
-}
-
-.textoalcentro {
-    text-align: center;
-}
-
-a {
-    color: black;
-    text-decoration: none;
     font-size: 1.5rem;
 }
 
@@ -59,19 +144,30 @@ img {
     height: 40rem;
 }
 
-footer {
-    text-align: center;
-}
+
+
 
 .achicarimg {
     width: 50px;
     height: 50px;
 }
 
-ion-icon {
-    font-size: 50px;
-}
+
+
 
 .textsize {
     font-size: 2rem;
+}
+
+
+
+
+footer {
+    text-align: center;
+}
+
+
+.footerstyle {
+    color: black;
+    font-size: 1.5rem;
 }

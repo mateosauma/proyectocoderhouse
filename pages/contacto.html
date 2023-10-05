@@ -12,31 +12,74 @@
 
 <body>
     <header>
-        <h1>Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/biografia.html">Biografia</a></li>
-                <li><a href="../pages/ubicacion.html">Ubicacion</a></li>
-            </ul>
+        <h1>Vuelos en Biplaza</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Contacto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/biografia.html">Biografia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Metodos</h2>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <p class="textsize">leonel.sauma</p>
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <p class="textsize">2944214446</p>
-            <ion-icon name="mail-unread-outline"></ion-icon>
-            <p class="textsize">mateosauma@hotmail.com</p>
+        <section class="tarjetas row">
+            <h2>Como comunicrase</h2>
+            <article class="col-4 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/instalogo.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram</h5>
+                        <p class="card-text">leonel.sauma</p>
+                        <a href="https://www.instagram.com/leonel.sauma/" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-4 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/wpplogo.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Whatsapp</h5>
+                        <p class="card-text">0000000000</p>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-4 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/513_email.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">mateosauma@gmail.com</p>
+                        <a href="https://www.google.com/intl/es-419/gmail/about/" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
         <footer>
             <img class="achicarimg" src="../img/caminata.jpeg" alt="">
             <h2 class="footerstyle">Leonel Sauma</h2>
-            <p>Leonel Sauma profesional en vuelo de biplaza</p>
+            <p class="footerstyle">Leonel Sauma profesional en vuelo de biplaza</p>
         </footer>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
