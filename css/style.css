@@ -34,6 +34,40 @@ ul {
     justify-content: space-around;
 }
 
+.mainimg {
+    width: 60%;
+}
+
+article {
+    border: solid black 2px;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6c5939;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+
+p {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 40rem;
+    height: 40rem;
+}
+
+
 /*PAGINA DE GALERIA*/
 
 
@@ -95,56 +129,10 @@ ul {
 
 /*PAGINA CONTACTO*/
 
-
-
-
-.mainimg {
-    width: 60%;
-    align: center;
-}
-
-
 .card-img-top {
     height: 15rem;
     width: 16rem;
 }
-
-
-article {
-    border: solid black 2px;
-}
-
-
-
-
-
-
-h1,
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #6c5939;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-
-
-p {
-    font-size: 1.5rem;
-}
-
-img {
-    width: 40rem;
-    height: 40rem;
-}
-
-
 
 
 .achicarimg {
@@ -153,14 +141,9 @@ img {
 }
 
 
-
-
 .textsize {
     font-size: 2rem;
 }
-
-
-
 
 footer {
     text-align: center;
