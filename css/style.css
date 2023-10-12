@@ -1,6 +1,6 @@
 * {
-    margin: 10px;
-    padding: 0px;
+    margin: 0px;
+    padding: 7px;
 }
 
 html {
@@ -14,6 +14,9 @@ header {
 
 }
 
+main {
+    text-align: center;
+}
 
 nav {
     width: 50%;
@@ -37,6 +40,12 @@ ul {
 .mainimg {
     width: 60%;
 }
+
+.tamanoimg {
+    width: 40rem;
+    height: 40rem;
+}
+
 
 article {
     border: solid black 2px;
@@ -77,13 +86,14 @@ img {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         "area1 area1 area2 area3"
-        "area1 area1 area4 area5"
-        "area6 area7 area8 area8";
+        "area1 area1 area4 area5 "
+        "area6 area7 area8 area9";
 
 }
 
 .gridarea1 {
     grid-area: area1;
+
 }
 
 .gridarea2 {
@@ -117,6 +127,10 @@ img {
     grid-area: area8;
 }
 
+.gridarea9 {
+    grid-template-columns: area9;
+}
+
 
 
 /*PAGINA UBICACION*/
@@ -145,12 +159,30 @@ img {
     font-size: 2rem;
 }
 
+
 footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uldesign {
+    display: flex;
+    list-style-position: inside;
+    flex-direction: row;
+    width: 25%;
+    justify-content: center;
     text-align: center;
 }
 
+.lidisgnfooter {
+    border-end-start-radius: solid black 2px;
+    display: flex;
+    justify-content: center;
+}
 
 .footerstyle {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
