@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>Vuelos en Biplaza</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg" style="background-color: #F9F3CC;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,46 +41,59 @@
         </nav>
     </header>
     <main>
-        <section class="tarjetas row">
-            <h2>Como comunicrase</h2>
-            <article class="col-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/instalogo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Instagram</h5>
-                        <p class="card-text">leonel.sauma</p>
-                        <a href="https://www.instagram.com/leonel.sauma/" class="btn btn-primary">Ir</a>
-                    </div>
-                </div>
+        <section>
+            <article>
+                <h3>Instagram</h3>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>leonel.sauma</p>
             </article>
-            <article class="col-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/wpplogo.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Whatsapp</h5>
-                        <p class="card-text">0000000000</p>
-                        <a href="https://www.whatsapp.com/?lang=es_LA" class="btn btn-primary">Ir</a>
-                    </div>
-                </div>
+            <article>
+                <h3>Whatsapp</h3>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <p>00000000000</p>
             </article>
-            <article class="col-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/513_email.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Email</h5>
-                        <p class="card-text">mateosauma@gmail.com</p>
-                        <a href="https://www.google.com/intl/es-419/gmail/about/" class="btn btn-primary">Ir</a>
-                    </div>
-                </div>
+            <article>
+                <h3>Mail</h3>
+                <ion-icon name="mail-unread-outline"></ion-icon>
+                <p>mateosauma@gmail.com</p>
+            </article>
+        </section>
+        <section class="contactoflex">
+            <article>
+                <form action="">
+                    <h2>Envianos un mensaje</h2>
+                    <input type="text">
+                    <input type="button" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </form>
+            </article>
+            <article>
+                <h2>Nosotros te contactamos</h2>
+                <form action="">
+                    <input type="email">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </form>
             </article>
         </section>
     </main>
     <footer>
-        <footer>
-            <img class="achicarimg" src="../img/caminata.jpeg" alt="">
-            <h2 class="footerstyle">Leonel Sauma</h2>
-            <p class="footerstyle">Leonel Sauma profesional en vuelo de biplaza</p>
-        </footer>
+        <div>
+            <ul class="uldesign">
+                <li class="lidisgnfooter"><a href="../pages/biografia.html">Biografia</a></li>
+                <li class="lidisgnfooter"><a href="#">Contacto</a></li>
+                <li class="lidisgnfooter"><a href="../pages/galeria.html">Galeria</a></li>
+                <li class="lidisgnfooter"> <a href="../pages/ubicacion.html">Ubicacion</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footerstyle">El texto está disponible bajo la Licencia Creative Commons Atribución-CompartirIgual
+                4.0 ; pueden aplicarse cláusulas adicionales. Al usar este sitio, usted acepta nuestros términos de uso
+                y nuestra <br>política de privacidad.
+                mateosauma® es una marca registrada de la Fundación saumainc, una organización sin ánimo de lucro.
+            </p>
+            <p class="footerstyle">®1973-2023 Sauma, Inc.</p>
+        </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

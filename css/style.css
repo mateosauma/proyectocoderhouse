@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 7px;
+    margin: px;
+    padding: 5px;
 }
 
 html {
@@ -11,16 +11,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #F9F3CC;
 
 }
 
 main {
     text-align: center;
+    border-top: solid #D7E5CA 1px;
+    background-color: #F9F3CC;
 }
 
 nav {
     width: 50%;
     font-size: 2rem;
+    background-color: black;
 }
 
 a {
@@ -48,7 +52,7 @@ ul {
 
 
 article {
-    border: solid black 2px;
+    border: solid #D7E5CA 1px;
 }
 
 h1,
@@ -76,18 +80,22 @@ img {
     height: 40rem;
 }
 
+ion-icon {
+    height: 5rem;
+    width: 5rem;
+}
 
 /*PAGINA DE GALERIA*/
 
 
 .conteiner {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "area1 area1 area2 area3"
-        "area1 area1 area4 area5 "
-        "area6 area7 area8 area9";
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
 
 }
 
@@ -131,6 +139,39 @@ img {
     grid-template-columns: area9;
 }
 
+.conteinerheader {
+    grid-area: header;
+}
+
+.conteinermain {
+    grid-area: main;
+}
+
+.conteinerfooter {
+    grid-area: footer;
+}
+
+@media(max-width:768px) {
+
+    .conteiner {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 100%;
+        grid-template-areas:
+
+            "header"
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5"
+            "area6"
+            "area7"
+            "area8"
+            "area9"
+            "footer";
+    }
+}
 
 
 /*PAGINA UBICACION*/
@@ -140,6 +181,9 @@ img {
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+
 
 /*PAGINA CONTACTO*/
 
@@ -161,25 +205,21 @@ img {
 
 
 footer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-top: solid #D7E5CA 1px;
+    background-color: #D7E5CA;
 }
 
 .uldesign {
     display: flex;
-    list-style-position: inside;
     flex-direction: row;
     width: 25%;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
 }
 
 .lidisgnfooter {
-    border-end-start-radius: solid black 2px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .footerstyle {
