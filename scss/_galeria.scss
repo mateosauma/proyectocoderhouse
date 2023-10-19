@@ -1,0 +1,158 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
+
+
+
+    .gridarea1 {
+        grid-area: area1;
+
+    }
+
+    .gridarea2 {
+        grid-area: area2;
+
+    }
+
+    .gridarea3 {
+        grid-area: area3;
+
+    }
+
+
+    .gridarea4 {
+        grid-area: area4;
+
+    }
+
+
+    .gridarea5 {
+        grid-area: area5;
+
+    }
+
+    .gridarea6 {
+        grid-area: area6;
+
+    }
+
+
+    .gridarea7 {
+        grid-area: area7;
+
+    }
+
+    .gridarea8 {
+        grid-area: area8;
+
+    }
+
+    .gridarea9 {
+        grid-area: area9;
+
+    }
+
+    .conteinerheader {
+        grid-area: header;
+    }
+
+    .conteinermain {
+        grid-area: main;
+    }
+
+    .conteinerfooter {
+
+        grid-area: footer;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    .conteiner {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 100%;
+        grid-template-areas:
+
+            "header"
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5"
+            "area6"
+            "area7"
+            "area8"
+            "area9"
+            "footer";
+
+        .gridarea1 {
+            grid-area: area1;
+
+        }
+
+        .gridarea2 {
+            grid-area: area2;
+
+        }
+
+        .gridarea3 {
+            grid-area: area3;
+
+        }
+
+
+        .gridarea4 {
+            grid-area: area4;
+
+        }
+
+
+        .gridarea5 {
+            grid-area: area5;
+
+        }
+
+        .gridarea6 {
+            grid-area: area6;
+
+        }
+
+
+        .gridarea7 {
+            grid-area: area7;
+
+        }
+
+        .gridarea8 {
+            grid-area: area8;
+
+        }
+
+        .gridarea9 {
+            grid-area: area9;
+
+        }
+
+        .conteinerheader {
+            grid-area: header;
+        }
+
+        .conteinermain {
+            grid-area: main;
+        }
+
+        .conteinerfooter {
+
+            grid-area: footer;
+
+        }
+    }
+}

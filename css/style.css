@@ -1,228 +1,214 @@
 * {
-    margin: px;
-    padding: 5px;
+  margin: 0px;
+  padding: 5px;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #F9F3CC;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F9F3CC;
+}
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6c5939;
+  font-size: 4rem;
+}
+header nav {
+  width: 50%;
+  font-size: 2rem;
+  background-color: black;
+}
+header nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header nav ul a {
+  color: #6C5939;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 main {
-    text-align: center;
-    border-top: solid #D7E5CA 1px;
-    background-color: #F9F3CC;
+  text-align: center;
+  border-top: solid #D7E5CA 1px;
+  background: rgb(238, 230, 174);
+  background: radial-gradient(circle, rgb(238, 230, 174) 0%, rgb(215, 229, 202) 100%);
+}
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6c5939;
+  font-size: 3rem;
+}
+main p {
+  font-size: 1.5rem;
+}
+main img {
+  width: 40rem;
+  height: 40rem;
+}
+main article {
+  border: solid #D7E5CA 1px;
 }
 
-nav {
-    width: 50%;
-    font-size: 2rem;
-    background-color: black;
+footer {
+  border-top: solid #D7E5CA 1px;
+  background-color: #D7E5CA;
 }
-
-a {
-    color: #6C5939;
-    text-decoration: none;
-    font-size: 1.5rem;
+footer .footerstyle {
+  color: black;
+  font-size: 1rem;
 }
-
-ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+footer .uldesign {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: left;
+  text-align: left;
+}
+footer .uldesign .lidisgnfooter {
+  display: flex;
+  justify-content: left;
+}
+footer .uldesign .lidisgnfooter a {
+  color: #6C5939;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .mainimg {
-    width: 60%;
+  width: 60%;
 }
 
 .tamanoimg {
-    width: 40rem;
-    height: 40rem;
-}
-
-
-article {
-    border: solid #D7E5CA 1px;
-}
-
-h1,
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #6c5939;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-
-
-p {
-    font-size: 1.5rem;
-}
-
-img {
-    width: 40rem;
-    height: 40rem;
+  width: 40rem;
+  height: 40rem;
 }
 
 ion-icon {
-    height: 5rem;
-    width: 5rem;
+  height: 5rem;
+  width: 5rem;
 }
-
-/*PAGINA DE GALERIA*/
-
 
 .conteiner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-        "area1 area2 area3"
-        "area4 area5 area6"
-        "area7 area8 area9";
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 area8 area9";
+}
+.conteiner .gridarea1 {
+  grid-area: area1;
+}
+.conteiner .gridarea2 {
+  grid-area: area2;
+}
+.conteiner .gridarea3 {
+  grid-area: area3;
+}
+.conteiner .gridarea4 {
+  grid-area: area4;
+}
+.conteiner .gridarea5 {
+  grid-area: area5;
+}
+.conteiner .gridarea6 {
+  grid-area: area6;
+}
+.conteiner .gridarea7 {
+  grid-area: area7;
+}
+.conteiner .gridarea8 {
+  grid-area: area8;
+}
+.conteiner .gridarea9 {
+  grid-area: area9;
+}
+.conteiner .conteinerheader {
+  grid-area: header;
+}
+.conteiner .conteinermain {
+  grid-area: main;
+}
+.conteiner .conteinerfooter {
+  grid-area: footer;
 }
 
-.gridarea1 {
+@media (max-width: 768px) {
+  .conteiner {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    grid-template-areas: "header" "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8" "area9" "footer";
+  }
+  .conteiner .gridarea1 {
     grid-area: area1;
-
-}
-
-.gridarea2 {
+  }
+  .conteiner .gridarea2 {
     grid-area: area2;
-}
-
-.gridarea3 {
+  }
+  .conteiner .gridarea3 {
     grid-area: area3;
-}
-
-
-.gridarea4 {
+  }
+  .conteiner .gridarea4 {
     grid-area: area4;
-}
-
-
-.gridarea5 {
+  }
+  .conteiner .gridarea5 {
     grid-area: area5;
-}
-
-.gridarea6 {
+  }
+  .conteiner .gridarea6 {
     grid-area: area6;
-}
-
-
-.gridarea7 {
+  }
+  .conteiner .gridarea7 {
     grid-area: area7;
-}
-
-.gridarea8 {
+  }
+  .conteiner .gridarea8 {
     grid-area: area8;
-}
-
-.gridarea9 {
-    grid-template-columns: area9;
-}
-
-.conteinerheader {
+  }
+  .conteiner .gridarea9 {
+    grid-area: area9;
+  }
+  .conteiner .conteinerheader {
     grid-area: header;
-}
-
-.conteinermain {
+  }
+  .conteiner .conteinermain {
     grid-area: main;
-}
-
-.conteinerfooter {
+  }
+  .conteiner .conteinerfooter {
     grid-area: footer;
+  }
+}
+.gridubicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 2fr);
+  grid-template-areas: "ubi1 ubi2";
+}
+.gridubicacion .ubi1 {
+  grid-area: ubi1;
+}
+.gridubicacion .ubi2 {
+  grid-area: ubi2;
 }
 
-@media(max-width:768px) {
-
-    .conteiner {
-        grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        width: 100%;
-        grid-template-areas:
-
-            "header"
-            "area1"
-            "area2"
-            "area3"
-            "area4"
-            "area5"
-            "area6"
-            "area7"
-            "area8"
-            "area9"
-            "footer";
-    }
+@media (max-width: 768px) {
+  .gridubicacion {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "ubi1" "ubi2";
+  }
+  .ubi1 {
+    grid-area: ubi1;
+  }
+  .ubi2 {
+    grid-area: ubi2;
+  }
 }
 
-
-/*PAGINA UBICACION*/
-
-.flexubicacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-
-
-/*PAGINA CONTACTO*/
-
-.card-img-top {
-    height: 15rem;
-    width: 16rem;
-}
-
-
-.achicarimg {
-    width: 50px;
-    height: 50px;
-}
-
-
-.textsize {
-    font-size: 2rem;
-}
-
-
-footer {
-    border-top: solid #D7E5CA 1px;
-    background-color: #D7E5CA;
-}
-
-.uldesign {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    justify-content: left;
-    text-align: left;
-}
-
-.lidisgnfooter {
-    display: flex;
-    justify-content: left;
-}
-
-.footerstyle {
-    color: black;
-    font-size: 1rem;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.gridubicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-areas:
+        "ubi1 ubi2";
+
+
+    .ubi1 {
+        grid-area: ubi1;
+
+    }
+
+    .ubi2 {
+        grid-area: ubi2;
+    }
+}
+
+@media(max-width:768px) {
+    .gridubicacion {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "ubi1"
+            "ubi2";
+    }
+
+    .ubi1 {
+        grid-area: ubi1;
+
+    }
+
+    .ubi2 {
+        grid-area: ubi2;
+    }
+}

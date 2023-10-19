@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 5px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F9F3CC;
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6c5939;
+        font-size: 4rem;
+    }
+
+    nav {
+        width: 50%;
+        font-size: 2rem;
+        background-color: black;
+
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            a {
+                color: #6C5939;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+main {
+    text-align: center;
+    border-top: solid #D7E5CA 1px;
+    background: rgb(238, 230, 174);
+    background: radial-gradient(circle, rgba(238, 230, 174, 1) 0%, rgba(215, 229, 202, 1) 100%);
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6c5939;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    article {
+        border: solid #D7E5CA 1px;
+    }
+
+}
+
+
+footer {
+    border-top: solid #D7E5CA 1px;
+    background-color: #D7E5CA;
+
+    .footerstyle {
+        color: black;
+        font-size: 1rem;
+    }
+
+    .uldesign {
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        justify-content: left;
+        text-align: left;
+
+        .lidisgnfooter {
+            display: flex;
+            justify-content: left;
+
+            a {
+                color: #6C5939;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}
